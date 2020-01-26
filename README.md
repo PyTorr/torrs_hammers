@@ -1,7 +1,8 @@
 # Common tools
 
 This project contains a few common tools that I like to use.
-Each file have few functions. 
+
+Each file has a few functions. 
 
 1. notifications.py - to make notifications during long runs.
 2. plotting.py - helping functions for matplotlib and plotly.
