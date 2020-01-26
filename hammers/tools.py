@@ -11,7 +11,7 @@ def sclmns(df, s, not_in=False):
     '''
     clmns = []
     if not_in:
-        all_clmns = list(df.colums)
+        all_clmns = list(df.columns)
         for i in s:
             all_clmns.remove(i)
         clmns = all_clmns.copy()
