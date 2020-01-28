@@ -9,3 +9,8 @@ Each file has a few functions.
 3. tools.py - statistical functions and pandas.
 
 - [ ] This is an ongoing project. 
+
+
+### Installation
+
+pip install git+https://github.com/PTorr/my_tools
