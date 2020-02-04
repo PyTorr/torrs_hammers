@@ -47,4 +47,4 @@ def sound_notification():
         freq = 440  # Hz
         winsound.Beep(freq, duration)
 
-sound_notification()
+# sound_notification()
