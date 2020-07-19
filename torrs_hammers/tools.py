@@ -1,5 +1,6 @@
 import pandas as pd
 from scipy import stats
+import os, sys
 
 def sclmns(df, s, not_in=False):
     '''
@@ -93,3 +94,22 @@ def ttest_or_mannwhitney(y1,y2):
         s, p = stats.mannwhitneyu(y1, y2)
 
     return s, p, ttest
+
+def new_dir(dirPath):
+    if not os.path.isdir(dirPath):
+        os.mkdir(dirPath)
+
+def progress(i, N, text = None):
+    '''
+    Update progress in the same line
+    :param i: current progress
+    :param N: total count
+    :param text: description text
+    :return:
+    '''
+    sys.stdout.write('/r')
+    if text is None:
+        sys.stdout.write('Frame {0}/{1} added to video'.format(i, N))
+    else:
+        sys.stdout.write(text + '{0}/{1}'.format(i, N))
+    sys.stdout.flush()
