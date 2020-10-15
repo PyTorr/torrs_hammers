@@ -13,5 +13,6 @@ Each file has a few functions.
 
 ### Installation
 
-pip install git+https://github.com/PTorr/my_tools
+pip install git+https://github.com/PTorr/my_tools 
+
 pip install -r requirements.txt
