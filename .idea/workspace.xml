@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2d6ff72-eb07-4559-9e45-a9b29e13a449" name="Default Changelist" comment="" />
+    <list default="true" id="a2d6ff72-eb07-4559-9e45-a9b29e13a449" name="Default Changelist" comment="Ascii signature">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/torrs_hammers/print_ascii.py" beforeDir="false" afterPath="$PROJECT_DIR$/torrs_hammers/print_ascii.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +70,14 @@
       <option name="presentableId" value="Default" />
       <updated>1607803406790</updated>
     </task>
+    <task id="LOCAL-00001" summary="Ascii signature">
+      <created>1608122289273</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608122289274</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -79,5 +90,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ascii signature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ascii signature" />
   </component>
 </project>

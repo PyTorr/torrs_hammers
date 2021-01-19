@@ -59,5 +59,24 @@ def main():
     with open("ascii_image.txt", "w") as f:
         f.write(ascii_img);
 
+def signature():
+    print('''
+       ** 
+        ** 
+         **    
+          **     *     
+           **   ***    
+            ** ******   
+             ********* 
+             *      *** 
+            ****  **** 
+           *****  ***  
+            ****  **   
+             *****     
+              ***     
+               *
+    ''')
+
 if __name__ == '__main__':
-    main()
+    # main()
+    signature()
