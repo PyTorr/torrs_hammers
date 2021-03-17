@@ -14,8 +14,10 @@ def sclmns(df, s, not_in=False):
     if not_in:
         all_clmns = list(df.columns)
         for i in s:
-            all_clmns.remove(i)
-        clmns = all_clmns.copy()
+            # all_clmns.remove(i)
+            # all_clmns = [x for x in all_clmns if not x.__contains__(i)]
+            clmns = clmns + list(df.columns[~df.columns.str.contains(i)])
+        # clmns = all_clmns.copy()
     else:
         for i in s:
             clmns = clmns + list(df.columns[df.columns.str.contains(i)])
