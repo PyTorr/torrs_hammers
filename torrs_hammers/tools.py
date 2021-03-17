@@ -17,7 +17,7 @@ def sclmns(df, s, not_in=False):
         for i in s:
             # all_clmns.remove(i)
             # all_clmns = [x for x in all_clmns if not x.__contains__(i)]
-            all_clmns = all_clmns[~df.columns.str.contains(i)]
+            all_clmns = all_clmns[~all_clmns.str.contains(i)]
         clmns = list(all_clmns
         # clmns = all_clmns.copy()
     else:
