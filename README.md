@@ -7,7 +7,8 @@ Each file has a few functions.
 1. notifications.py - to make notifications during long runs.
 2. plotting.py - helping functions for matplotlib and plotly.
 3. tools.py - statistical functions and pandas.
-
+- [ ] Create easy plotly_express subplots.
+ 
 - [ ] This is an ongoing project. 
 
 
