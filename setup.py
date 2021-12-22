@@ -3,7 +3,7 @@ from setuptools import setup
 setup(name='torrs_hammers',
       version='0.1',
       description='useful tools',
-      url='http://https://github.com/PTorr/torrs_hammers',
+      url='https://github.com/PyTorr/torrs_hammers/archive/refs/tags/v01.tar.gz',
       author='Torr',
       author_email='',
       license='MIT',
