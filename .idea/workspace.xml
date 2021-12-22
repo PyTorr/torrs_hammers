@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2d6ff72-eb07-4559-9e45-a9b29e13a449" name="Default Changelist" comment="sclmns">
-      <change afterPath="$PROJECT_DIR$/torrs_hammers/beta/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/torrs_hammers/beta/dash_example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/torrs_hammers/plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/torrs_hammers/plotting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/torrs_hammers/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/torrs_hammers/tools.py" afterDir="false" />
+    <list default="true" id="a2d6ff72-eb07-4559-9e45-a9b29e13a449" name="Default Changelist" comment="multiple string values in column">
+      <change afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +156,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615982730775</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="multiple string values in column">
+      <created>1640160193634</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1640160193634</updated>
+    </task>
+    <task id="LOCAL-00008" summary="multiple string values in column">
+      <created>1640160311633</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1640160311633</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -189,7 +199,8 @@
     <MESSAGE value="Ascii signature" />
     <MESSAGE value="Added signature" />
     <MESSAGE value="sclmns" />
-    <option name="LAST_COMMIT_MESSAGE" value="sclmns" />
+    <MESSAGE value="multiple string values in column" />
+    <option name="LAST_COMMIT_MESSAGE" value="multiple string values in column" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
