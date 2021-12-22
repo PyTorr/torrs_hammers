@@ -3,6 +3,13 @@ from scipy import stats
 import os, sys
 
 def choose_multiple_values_in_column(df, colName, values):
+    '''
+    Return the dataframe (df) with selected string (values) in colName
+    @param df: pandas dataframe
+    @param colName: which column
+    @param values: what are the values of intrest
+    @return: dataframe (df) with selected string (values) in colName
+    '''
     return df[df[colName].str.contains('|'.join(values))]
 
 def sclmns(df, s, not_in=False):
