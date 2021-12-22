@@ -2,6 +2,9 @@ import pandas as pd
 from scipy import stats
 import os, sys
 
+def choose_multiple_values_in_column(df, colName, values):
+    return df[df[colName].str.contains('|'.join(values))]
+
 def sclmns(df, s, not_in=False):
     '''
     Return all the columns that (not) contain the names in s.
@@ -18,7 +21,7 @@ def sclmns(df, s, not_in=False):
             # all_clmns.remove(i)
             # all_clmns = [x for x in all_clmns if not x.__contains__(i)]
             all_clmns = all_clmns[~all_clmns.str.contains(i)]
-        clmns = list(all_clmns
+        clmns = list(all_clmns)
         # clmns = all_clmns.copy()
     else:
         for i in s:

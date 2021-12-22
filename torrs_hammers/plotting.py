@@ -2,6 +2,7 @@ from scipy import stats
 import plotly.graph_objs as go
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.widgets import RectangleSelector
 import matplotlib.mlab as mlab
 import plotly
 import plotly.tools as tls
@@ -92,7 +93,7 @@ def save_maxfig(fig, fig_name, save_plotly=False, transperent = False, frmt='png
     if resize != None:
         fig.set_size_inches(resize[0], resize[1])
     fig_name+='.'+frmt
-    plt.savefig(fig_name, dpi=300, transperent=transperent, format=frmt)
+    plt.savefig(fig_name, dpi=300, format=frmt)
 
     if save_plotly :
         # offline plotting
@@ -100,3 +101,58 @@ def save_maxfig(fig, fig_name, save_plotly=False, transperent = False, frmt='png
         plotly_fig_name = + fig_name + '.html'
         plotly_fig['layout'].update(height=1500, width=800, showlegend=False)
         plotly.offline.plot(plotly_fig, filename=plotly_fig_name, auto_open=False)  # offline ploty
+
+
+def manual_matplotlib_crop(fullImage):
+    '''
+    Manually crop part of the image.
+    @param fullImage: Image to crop
+    @return: the cropped image.
+    '''
+
+    def line_select_callback(eclick, erelease):
+        '''
+        Get x1, y1 when cliked and x2,y2 when released.
+        '''
+        x1, y1 = eclick.xdata, eclick.ydata
+        x2, y2 = erelease.xdata, erelease.ydata
+
+    def toggle_selector(event):
+        '''
+        (de) Activate the selector.
+        '''
+        print(' Key pressed.')
+        if event.key in ['Q', 'q'] and toggle_selector.RS.active:
+            print(' RectangleSelector deactivated.')
+            toggle_selector.RS.set_active(False)
+        if event.key in ['A', 'a'] and not toggle_selector.RS.active:
+            print(' RectangleSelector activated.')
+            toggle_selector.RS.set_active(True)
+
+
+
+    fig, ax = plt.subplots(1, 1, figsize=(15, 10))
+    ax.imshow(fullImage)
+
+    toggle_selector.RS = RectangleSelector(ax, line_select_callback,
+                                           drawtype='box', useblit=True,
+                                           button=[1,3],
+                                           minspanx=5, minspany=5,
+                                           spancoords='pixels',
+                                           interactive=True)
+
+    plt.connect('key_pressed_event', toggle_selector)
+    plt.show()
+    cropCoords = [int(x) for x in toggle_selector.RS.extents]
+
+    croopedIm = fullImage[cropCoords[2]:cropCoords[3], cropCoords[0]:cropCoords[1]]
+
+    return croopedIm
+
+
+# if __name__ == '__main__':
+#
+#     im = plt.imread('car.png')
+#     cIm = manual_matplotlib_crop(im)
+#     plt.imshow(cIm)
+#     plt.show()
