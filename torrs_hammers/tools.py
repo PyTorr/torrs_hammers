@@ -1,3 +1,4 @@
+# https://medium.com/@joel.barmettler/how-to-upload-your-python-package-to-pypi-65edc5fe9c56
 import pandas as pd
 from scipy import stats
 import os, sys
