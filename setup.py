@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='torrs_hammers',
-      version='0.1',
+      version='0.2',
       description='useful tools',
       url='https://github.com/PyTorr/torrs_hammers/archive/refs/tags/v01.tar.gz',
       author='Torr',
