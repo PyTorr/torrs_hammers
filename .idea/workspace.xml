@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2d6ff72-eb07-4559-9e45-a9b29e13a449" name="Default Changelist" comment="multiple string values in column">
+      <change afterPath="$PROJECT_DIR$/torrs_hammers/images_matrix_plot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torrs_hammers/pandas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torrs_hammers/stats.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/torrs_hammers/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/torrs_hammers/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/torrs_hammers/ascii_image.txt" beforeDir="false" afterPath="$PROJECT_DIR$/torrs_hammers/ascii_image.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/torrs_hammers/batman.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/torrs_hammers/sample_images/batman.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/torrs_hammers/car.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/torrs_hammers/sample_images/car.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/torrs_hammers/car.png" beforeDir="false" afterPath="$PROJECT_DIR$/torrs_hammers/sample_images/car.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/torrs_hammers/car.svg" beforeDir="false" afterPath="$PROJECT_DIR$/torrs_hammers/sample_images/car.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/torrs_hammers/notifications.py" beforeDir="false" afterPath="$PROJECT_DIR$/torrs_hammers/notifications.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/torrs_hammers/plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/torrs_hammers/plotting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/torrs_hammers/print_ascii.py" beforeDir="false" afterPath="$PROJECT_DIR$/torrs_hammers/print_ascii.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/torrs_hammers/thammer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/torrs_hammers/sample_images/thammer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/torrs_hammers/thammer1.png" beforeDir="false" afterPath="$PROJECT_DIR$/torrs_hammers/sample_images/thammer1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/torrs_hammers/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/torrs_hammers/general.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +46,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/torrs_hammers" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
-  <component name="RunManager" selected="Python.dash_example">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\torrp\OneDrive - mail.tau.ac.il\PycharmProjects\##lcoal\my_tools\torrs_hammers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\torrp\OneDrive - mail.tau.ac.il\PycharmProjects\##lcoal\my_tools\torrs_hammers\sample_images" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.print_ascii">
     <configuration name="dash_example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="my_tools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -98,11 +121,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="setup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="my_tools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/setup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.print_ascii" />
+        <item itemvalue="Python.setup" />
         <item itemvalue="Python.dash_example" />
         <item itemvalue="Python.plotting" />
-        <item itemvalue="Python.print_ascii" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +230,35 @@
       <option name="project" value="LOCAL" />
       <updated>1640161057894</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="time tools">
+      <created>1663701598072</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663701598072</updated>
+    </task>
+    <task id="LOCAL-00012" summary="time tools">
+      <created>1663701647134</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663701647134</updated>
+    </task>
+    <task id="LOCAL-00013" summary="time tools">
+      <created>1663701701384</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663701701384</updated>
+    </task>
+    <task id="LOCAL-00014" summary="time tools">
+      <created>1663704321814</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663704321814</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -215,7 +288,8 @@
     <MESSAGE value="Added signature" />
     <MESSAGE value="sclmns" />
     <MESSAGE value="multiple string values in column" />
-    <option name="LAST_COMMIT_MESSAGE" value="multiple string values in column" />
+    <MESSAGE value="time tools" />
+    <option name="LAST_COMMIT_MESSAGE" value="time tools" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -224,6 +298,11 @@
           <url>file://$PROJECT_DIR$/torrs_hammers/beta/dash_example.py</url>
           <line>21</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/setup.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

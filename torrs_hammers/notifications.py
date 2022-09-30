@@ -1,12 +1,24 @@
 import smtplib
 import os
 from sys import platform
+from tkinter import *
+
+def show_message(file_name):
+    '''Prints text message from txt file'''
+    fl1 = open(file_name, 'r')
+    f_str = fl1.read()
+    fl1.close()
+    # Output a message
+    root = Tk()
+    w = Label(root, text=f_str)
+    w.pack()
+    root.mainloop()
 
 
-def sendemail(from_addr, to_addr_list, cc_addr_list,
-              subject, message,
-              login, password,
-              smtpserver='smtp.gmail.com:587'):
+def send_email(from_addr, to_addr_list, cc_addr_list,
+               subject, message,
+               login, password,
+               smtpserver='smtp.gmail.com:587'):
     '''
     example:
     sendemail(from_addr    = 'user1@gmail.com',

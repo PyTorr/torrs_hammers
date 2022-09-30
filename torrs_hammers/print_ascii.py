@@ -1,12 +1,5 @@
 import PIL.Image
 
-def main():
-    path = input("Enter the path to the image fiel : \n")
-    try:
-        image = PIL.Image.open(path)
-    except:
-        print(path, "Unable to find image ");
-
 # ASCII_CHARS = ["@", "#", "$", "%", "?", "*", "+", ";", ":", ",", "."]
 # ASCII_CHARS = ["@", "#", "$", "%", "?", "*", " ", " ", " ", " ", " "]
 ASCII_CHARS = ["*", "*", "*", "*", "*", "*", " ", " ", " ", " ", " "]
@@ -33,11 +26,8 @@ def pixel_to_ascii(image):
         ascii_str += ASCII_CHARS[pixel//25];
     return ascii_str
 
-def main():
-    # path = input("Enter the path to the image fiel : \n")
-    path = 'thammer.jpg'
-    # path = 'car.jpg'
-    # path = 'batman.jpg'
+def image_to_ascii(path = 'sample_images/thammer.jpg',
+                   output_name='ascii_image.txt'):
     try:
         image = PIL.Image.open(path)
     except:
@@ -56,7 +46,7 @@ def main():
         ascii_img += ascii_str[i:i+img_width] + "\n"
     print(ascii_img)
     #save the string to a file
-    with open("ascii_image.txt", "w") as f:
+    with open(output_name, "w") as f:
         f.write(ascii_img);
 
 def signature():
@@ -78,5 +68,5 @@ def signature():
     ''')
 
 if __name__ == '__main__':
-    # main()
+    # image_to_ascii()
     signature()

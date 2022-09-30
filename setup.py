@@ -6,7 +6,7 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 setup(name='torrs_hammers',
-      version='0.2',
+      version='0.2.3',
       description='useful tools',
       url='https://github.com/PyTorr/torrs_hammers/archive/refs/tags/v02.tar.gz',
       author='PyTorr',

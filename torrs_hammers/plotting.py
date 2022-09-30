@@ -3,11 +3,9 @@ import plotly.graph_objs as go
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.widgets import RectangleSelector
-import matplotlib.mlab as mlab
 import plotly
 import plotly.tools as tls
-from tkinter import *
-import os
+
 
 
 def plotly_reg(x, y, fig, rc, clr, description_txt='', x_var_name ='', y_var_name ='',
@@ -61,18 +59,6 @@ def format_axis(ax, xlbl, ylbl, ind = None):
         for label in ax.get_xmajorticklabels():
             label.set_rotation(30)
             label.set_horizontalalignment("right")
-
-
-def show_message(file_name):
-    '''Prints text message from txt file'''
-    fl1 = open(file_name, 'r')
-    f_str = fl1.read()
-    fl1.close()
-    # Output a message
-    root = Tk()
-    w = Label(root, text=f_str)
-    w.pack()
-    root.mainloop()
 
 
 def save_maxfig(fig, fig_name, save_plotly=False, transperent = False, frmt='png', resize=None):
